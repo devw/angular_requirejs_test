@@ -1,20 +1,17 @@
-(function (define, describe, beforeEach, inject, module, it, expect) {
+(function (define, describe, beforeEach, it, expect) {
     'use strict';
 
     define([
-        'test/app.spec',
-        'app/controllers/pie.controller'
-    ], function (app, pieController) {
+        'angular',
+        'test/app.spec'
+    ], function (angular) {
         describe('pieController', function () {
-
-            app.controller('pieController', pieController);
 
             var $scope = {};
 
             beforeEach(function () {
-                inject(function ($controller) {
+                angular.mock.inject(function ($controller) {
                     // The injector unwraps the underscores (_) from around the parameter names when matching
-                    // $controller = _$controller_;
                     $controller('pieController', { $scope: $scope });
                 });
             });
@@ -33,4 +30,4 @@
             });
         });
     });
-}(this.define, this.describe, this.beforeEach, this.inject, this.module, this.it, this.expect));
+}(this.define, this.describe, this.beforeEach, this.it, this.expect));
