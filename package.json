@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "karma-jasmine": "^0.3.5"
   },
   "devDependencies": {
+    "karma": "~0.8",
     "grunt": "^0.4.5",
     "karma-requirejs": "^0.2.2",
     "requirejs": "^2.1.16"
