@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devw/angular-requirejs-karma-showcase.svg?branch=master)](https://travis-ci.org/devw/angular-requirejs-karma-showcase)
+
 ## angular-requirejs-karma-showcase
 
 1. Copy the repository named angular-karma-requirejs
